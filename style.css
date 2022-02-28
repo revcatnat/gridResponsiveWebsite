@@ -8,7 +8,7 @@ img {
 }
 
 body {
-	background-color: #ddd;
+	background-color: rgb(248, 246, 246);
 	font-size: 18px;
 	font-family: "Sarabun", Arial, Helvetica, sans-serif;
 	margin: 50px;
@@ -43,6 +43,55 @@ body {
 	display: grid;
 	/* justify-content: center;
 	align-content: center; */
-	place-content: center center;
+	place-content: center;
 	text-align: center;
+	cursor: pointer;
 }
+
+.feature-1 {
+	grid-area: feature-1;
+	background: url("img/tuxs.jpg");
+	background-size: cover;
+}
+
+.feature-2 {
+	grid-area: feature-2;
+	background: url("img/shirt.jpg");
+	background-size: cover;
+}
+
+.features .price {
+	font-size: 2em;
+	font-weight: 200;
+}
+
+/* Navigation */
+.menu {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+}
+
+.menu .brand {
+	font-size: 1.3em;
+	color: #333;
+}
+
+.menu ul {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	gap: 5px;
+}
+
+.menu a {
+	display: block;
+	color: white;
+	background-color: black;
+	text-decoration: none;
+	text-align: center;
+	padding: 7px;
+	text-transform: uppercase;
+}
+
+/* Responsive Breakpoints */
