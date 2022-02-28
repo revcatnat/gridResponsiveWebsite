@@ -58,12 +58,14 @@ body {
 	grid-area: feature-1;
 	background: url("img/tuxs.jpg");
 	background-size: cover;
+	background-position: center;
 }
 
 .feature-2 {
 	grid-area: feature-2;
 	background: url("img/shirt.jpg");
 	background-size: cover;
+	background-position: center;
 }
 
 .features .price {
@@ -224,5 +226,20 @@ body {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
+	.header {
+		grid-template-areas:
+			"hero"
+			"feature-1"
+			"feature-2";
+	}
+
+	.feature-1,
+	.feature-2 {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		justify-content: space-around;
+		padding: 15px;
+	}
 } ;
