@@ -237,6 +237,17 @@ body {
 		align-items: start;
 		justify-content: center;
 	}
+
+	.services {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		justify-content: space-between;
+	}
+
+	.service {
+		width: 43%;
+	}
 }
 
 /* Tablet */
@@ -249,11 +260,11 @@ body {
 		display: flex;
 	}
 
+	/* nav ul */
 	.menu ul {
 		position: absolute;
 		right: 0;
 		top: 0;
-		flex-direction: column;
 		background-color: rgb(0, 0, 0);
 		height: 100vh;
 		align-items: center;
@@ -264,6 +275,7 @@ body {
 		width: 100%;
 		z-index: 1;
 		display: flex;
+		flex-direction: column;
 	}
 
 	.menu ul.slide {
@@ -273,6 +285,17 @@ body {
 
 	.menu ul li a:active {
 		color: rgb(255, 52, 52);
+	}
+
+	.services {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		justify-content: space-between;
+	}
+
+	.service {
+		width: 40%;
 	}
 }
 
@@ -295,5 +318,16 @@ body {
 		justify-items: center;
 		justify-content: space-around;
 		padding: 15px;
+	}
+
+	.services {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		justify-content: space-between;
+	}
+
+	.service {
+		width: 100%;
 	}
 } ;
